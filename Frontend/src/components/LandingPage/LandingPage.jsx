@@ -6,6 +6,7 @@ import "./LandingPage.css"; // Import your CSS file
 // import UploadComponent from "../upload/UploadComponent";
 import NavbarComponent from "../navbar/NavbarComponent";
 import { FileUpload } from "../FileUpload/FileUpload";
+import Newsletter from "../Newsletter/Newsletter";
 
 export default function LandingPage() {
   // Define the words array here
@@ -30,6 +31,7 @@ export default function LandingPage() {
         </div>
       </div>
       <FileUpload />
+      <Newsletter />
     </>
   );
 }
