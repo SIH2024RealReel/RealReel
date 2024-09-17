@@ -8,14 +8,14 @@
   background-color: var(--background);
   color: white;
   color: color;
-  border: solid 2px white;
 }
 .socialIcons {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
 }
 #footer-title {
   font-size: 1.5em;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   color: #fff;
 }
