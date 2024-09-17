@@ -23,12 +23,12 @@ function Newsletter() {
             className="div"
           >
             <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-              RealReel
+            RealReel
             </h2>
             <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-              This globe is interactive and customizable. Have fun with it, and
-              don&apos;t forget to share it. :)
+            Discover AI media with RealReel, where creativity reshapes reality.  
             </p>
+
           </motion.div>
           <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
           <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
@@ -46,9 +46,9 @@ function Newsletter() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="innerContainer mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        >
-          Build lamps <br /> the right way
+          className="innerContainer mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+          Unveil <br />the <br/>Unreal
+
         </motion.h1>
       </LampContainer>
     </div>
