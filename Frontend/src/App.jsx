@@ -7,6 +7,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import AboutUs from "./components/Aboutus/AboutUs";
 import Footer from "./components/footer/Footer";
 import LandingPage from "./components/LandingPage/LandingPage";
+// import { Loader } from "./components/Loader/Loader";
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/loader" element={<Loader />} /> */}
         </Routes>
       </BrowserRouter>
       <Footer />
