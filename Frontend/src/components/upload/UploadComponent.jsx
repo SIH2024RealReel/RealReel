@@ -14,9 +14,7 @@ const FileUploadComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your upload functionality here (API call or file handling logic)
     console.log(`Uploading file: ${selectedFile.name} to email: ${email}`);
-    // Reset the state after submission
     setSelectedFile(null);
     setEmail("");
   };
