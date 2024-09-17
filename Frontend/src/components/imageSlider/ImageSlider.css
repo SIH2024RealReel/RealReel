@@ -1,0 +1,31 @@
+/* src/ImageSlider.css */
+
+.scroll-slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none; /* Firefox */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .scroll-slider:active {
+    cursor: grabbing;
+  }
+  
+  .scroll-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .slider-item {
+    min-width: 300px;
+    margin-right: 10px;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
