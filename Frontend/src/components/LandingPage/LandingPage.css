@@ -1,0 +1,27 @@
+.landing-page-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+}
+
+.background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Ensure background stays behind other content */
+}
+
+.title-container {
+  position: relative;
+  z-index: 1; /* Ensure title is on top of background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Center the content vertically */
+  bottom: 97%;
+}
+
+.text-title {
+  color: green;
+}
