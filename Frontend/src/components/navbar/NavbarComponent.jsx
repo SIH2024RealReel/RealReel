@@ -20,9 +20,6 @@ const NavComponent = () => {
             <a href="/contact" className="nav-link">Contact</a>
           </li>
         </ul>
-        <button className="toggle-btn" onClick={toggleDarkMode}>
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
       </div>
     </nav>
   );

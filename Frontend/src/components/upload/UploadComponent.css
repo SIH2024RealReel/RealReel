@@ -6,7 +6,7 @@
     --primary-color: #1F4959;
 }
 .body{
-    background-color: #242424;
+    background-color: var(--background);
 }
 
 .container {

@@ -50,7 +50,7 @@ const FileUploadComponent = () => {
               <p>Files Supported: PNG, JPEG, MP4</p>
               <input
                 type="file"
-                accept=".doc,.docx,.pdf"
+                accept=".jpeg,.png,.mp4"
                 onChange={handleFileChange}
                 hidden
                 id="fileID"

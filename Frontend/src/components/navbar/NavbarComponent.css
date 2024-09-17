@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -17,13 +16,13 @@ body {
     border-radius: 10px;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
     position: fixed; 
-    top: 3px;
-    left: 5px;
-    right: 5px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
     z-index: 1000;
   }
   
-  .navbar.dark-mode {
+  .navbar {
     background-color: rgba(31, 31, 31, 0.8); 
   }
   
@@ -45,11 +44,6 @@ body {
   }
   
 
-  .navbar.dark-mode .logo {
-    color: #fff;
-  }
-  
-
   .nav-links {
     list-style: none;
     display: flex;
@@ -58,11 +52,12 @@ body {
   
   .nav-link {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     position: relative;
     padding: 5px 0;
+    margin-right: auto;
     transition: color 0.3s, transform 0.3s ease;
   }
   
@@ -86,43 +81,6 @@ body {
   .nav-link:hover::after {
     width: 100%;
   }
-  
-  .navbar.dark-mode .nav-link {
-    color: #fff;
-  }
-  
-  .navbar.dark-mode .nav-link:hover {
-    color: #00bfff;
-  }
-  
-  .toggle-btn {
-    background-color: transparent;
-    border: 2px solid #333;
-    padding: 8px 16px;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-  }
-  
-  .toggle-btn:hover {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-  }
-  
-  .navbar.dark-mode .toggle-btn {
-    color: #fff;
-    border-color: #fff;
-  }
-  
-  .navbar.dark-mode .toggle-btn:hover {
-    background-color: #00bfff;
-    border-color: #00bfff;
-  }
-  
   @media (max-width: 768px) {
     .nav-links {
       flex-direction: column;
