@@ -1,9 +1,6 @@
 import { React, useState } from "react";
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import ImageSlider from "./components/imageSlider/ImageSlider";
-// import FileUploadComponent from "./components/upload/UploadComponent";
-// import NavbarComponent from "./components/navbar/NavbarComponent";
 import AboutUs from "./components/Aboutus/AboutUs";
 import Footer from "./components/footer/Footer";
 import LandingPage from "./components/LandingPage/LandingPage";

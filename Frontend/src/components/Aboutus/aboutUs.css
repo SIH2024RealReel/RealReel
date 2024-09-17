@@ -1,5 +1,5 @@
 .aboutus {
-  background-color: var(--background);
+  background-color: black;
   color: var(--color);
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 .about-us-container {
-  width: 100%;
+  width: 90%;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
