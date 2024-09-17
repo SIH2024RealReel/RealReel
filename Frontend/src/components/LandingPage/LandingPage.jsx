@@ -16,7 +16,6 @@ export default function LandingPage() {
     },
     // Add more words or customize class names if needed
   ];
-
   return (
     <>
       <NavbarComponent />

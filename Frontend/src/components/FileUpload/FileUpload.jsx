@@ -3,6 +3,8 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { IconUpload } from "@tabler/icons-react";
 import { useDropzone } from "react-dropzone";
+import Loader from "../Loader/Loader";
+import { text } from "framer-motion/client";
 
 const mainVariant = {
   initial: {
@@ -24,9 +26,18 @@ const secondaryVariant = {
     opacity: 1,
   },
 };
+const loadingStates = [
+  { text: "Extracting Frames" },
+  { text: "Pre-Processing Frames" },
+  { text: "Feeding Frames to the Machine Learining Model" },
+  { text: "Analyzing Frames" },
+  { text: "Finding Inconsistencies" },
+  { text: "Generating Report" },
+];
 
 export const FileUpload = ({ onChange }) => {
   const [files, setFiles] = useState([]);
+  const [loading, setLoading] = useState(false);
   const fileInputRef = useRef(null);
 
   const handleFileChange = (newFiles) => {
@@ -39,11 +50,14 @@ export const FileUpload = ({ onChange }) => {
   };
 
   const handleUpload = (event) => {
-    // event.stopPropagation();
-    // Add your upload functionality here (API call or file handling logic)
-    console.log(`Uploading file: ${files[0].name}`);
-    // Reset the state after submission
-    setFiles([]);
+    event.stopPropagation();
+    setLoading(true); // Trigger the loader
+    // Simulate upload delay for demonstration purposes
+    setTimeout(() => {
+      console.log(`Uploading file: ${files[0].name}`);
+      setFiles([]);
+      setLoading(false);
+    }, 15000);
   };
 
   const { getRootProps, isDragActive } = useDropzone({
@@ -143,6 +157,9 @@ export const FileUpload = ({ onChange }) => {
                     className="p-3 px-4 rounded-md bg-gray-100 dark:bg-neutral-800 "
                   >
                     <button onClick={(e) => handleUpload(e)}>Upload</button>
+                    {loading && (
+                      <Loader loadingStates={loadingStates} loading={loading} />
+                    )}
                   </motion.p>
                 </div>
               </motion.div>
