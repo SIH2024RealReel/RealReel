@@ -5,14 +5,17 @@ import './App.css'
 import Footer from './components/footer/Footer'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ImageSlider from './components/imageSlider/ImageSlider.jsx'
+import FileUploadComponent from './components/upload/UploadComponent'
+import NavbarComponent from './components/navbar/NavbarComponent'
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Footer />} />
-        <Route path="/slider" element={<ImageSlider/>} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <NavbarComponent />
+      <FileUploadComponent />
+      <ImageSlider />
+      <Footer />
+    </div>
   );
 }
 
