@@ -38,7 +38,7 @@ body {
   .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #333; 
+    color: white; 
     text-transform: strtoupper;
     letter-spacing: 1px;
   }
@@ -52,7 +52,7 @@ body {
   
   .nav-link {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     position: relative;

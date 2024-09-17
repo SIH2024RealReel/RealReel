@@ -5,14 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
+  background-color: black;
   color: white;
   color: color;
+  padding: 2rem;
 }
 .socialIcons {
   height: 50px;
   width: 50px;
-  margin-bottom: 10px;
+  margin: 20px 0px;
 }
 #footer-title {
   font-size: 1.5em;
