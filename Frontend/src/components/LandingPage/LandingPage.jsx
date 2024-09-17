@@ -3,8 +3,9 @@ import BackgroundGradient from "../BackgroundGradient/BackgroundGradient";
 import Footer from "../footer/Footer";
 import TypeWriterTitle from "../TypeWriterTitle/TypeWriterTitle";
 import "./LandingPage.css"; // Import your CSS file
-import UploadComponent from "../upload/UploadComponent";
+// import UploadComponent from "../upload/UploadComponent";
 import NavbarComponent from "../navbar/NavbarComponent";
+import { FileUpload } from "../FileUpload/FileUpload";
 
 export default function LandingPage() {
   // Define the words array here
@@ -18,7 +19,7 @@ export default function LandingPage() {
 
   return (
     <>
-    <NavbarComponent />
+      <NavbarComponent />
       <div className="landing-page-container">
         <BackgroundGradient className="background-gradient" />
         <div className="title-container">
@@ -29,7 +30,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <UploadComponent />
+      <FileUpload />
     </>
   );
 }

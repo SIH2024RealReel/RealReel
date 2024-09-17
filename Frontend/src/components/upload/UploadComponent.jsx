@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import './UploadComponent.css';
+import React, { useState } from "react";
+import "./UploadComponent.css";
 
 const FileUploadComponent = () => {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -18,12 +18,12 @@ const FileUploadComponent = () => {
     console.log(`Uploading file: ${selectedFile.name} to email: ${email}`);
     // Reset the state after submission
     setSelectedFile(null);
-    setEmail('');
+    setEmail("");
   };
 
   return (
-    <div className="container">
-      <div className="card">
+    <div className="upload-container">
+      <div className="upload-card">
         <h3>Upload Files</h3>
         <div className="drop_box">
           {selectedFile ? (
@@ -57,7 +57,7 @@ const FileUploadComponent = () => {
               />
               <button
                 className="btn"
-                onClick={() => document.getElementById('fileID').click()}
+                onClick={() => document.getElementById("fileID").click()}
               >
                 Choose File
               </button>

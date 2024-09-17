@@ -1,34 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-    --background: #011425;
-    --color: #ffffff;
-    --primary-color: #1F4959;
+  --background: #011425;
+  --color: #ffffff;
+  --primary-color: #1f4959;
 }
-.body{
-    background-color: var(--background);
+.body {
+  background-color: var(--background);
 }
 
-.container {
+.upload-container {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
-.header{
-    color: #ffffff;
+.header {
+  color: #ffffff;
 }
-.card {
+.upload-card {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(31, 73, 89, 0.5);
-  width: 600px;
   height: auto;
+  min-width: 600px;
+  min-height: 500px;
   padding: 20px;
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
-.card h3 {
+.upload-card h3 {
   font-size: 22px;
   font-weight: 600;
 }
@@ -47,39 +54,38 @@
 .drop_box h4 {
   font-size: 16px;
   font-weight: 400;
-  color: #2e2e2e;
+  color: white;
 }
 
 .drop_box p {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 12px;
-  color: #a3a3a3;
+  color: white;
 }
 
-
 .btn {
-    background-color:#1F4959;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: var(#1F4959);
-    color: var(#1F4959);
-    border: 1px solid #010101;
-  }
-  
-  .form input {
-    margin: 10px 0;
-    width: 100%;
-    background-color: #e2e2e2;
-    border: none;
-    outline: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-  }
+  background-color: #1f4959;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(#1f4959);
+  color: white;
+  border: 1px solid #010101;
+}
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
