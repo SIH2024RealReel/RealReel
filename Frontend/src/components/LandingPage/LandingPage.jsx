@@ -2,19 +2,16 @@ import React from "react";
 import BackgroundGradient from "../BackgroundGradient/BackgroundGradient";
 import Footer from "../footer/Footer";
 import TypeWriterTitle from "../TypeWriterTitle/TypeWriterTitle";
-import "./LandingPage.css"; // Import your CSS file
-// import UploadComponent from "../upload/UploadComponent";
+import "./LandingPage.css"; 
 import NavbarComponent from "../navbar/NavbarComponent";
 import { FileUpload } from "../FileUpload/FileUpload";
 
-export default function LandingPage() {
-  // Define the words array here
+function LandingPage() {
   const words = [
     {
       text: "See through the fake, with AI keeping you awake.",
       className: "some-classname",
     },
-    // Add more words or customize class names if needed
   ];
   return (
     <>
@@ -23,7 +20,7 @@ export default function LandingPage() {
         <BackgroundGradient className="background-gradient" />
         <div className="title-container">
           <TypeWriterTitle
-            words={words} // Pass the words array correctly here
+            words={words} 
             className="my-custom-class"
             cursorClassName="my-cursor-class"
           />
@@ -33,3 +30,4 @@ export default function LandingPage() {
     </>
   );
 }
+export default LandingPage;
