@@ -52,3 +52,14 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/your-username/realreel.git
    cd realreel
+
+
+### Usage
+Once the website is running:
+
+- **Typewriter Effect:** Explore the dynamic page title created using a smooth typewriter animation powered by Framer Motion.
+- **Interactive 3D Globe:** Engage with the 3D globe, which offers an immersive, visually striking experience for users.
+- **Newsletter Signup:** Sign up for the newsletter to receive updates about AI-generated content and deepfake detection technology.
+- **Dark/Light Mode Support:** Switch between light and dark themes to suit your viewing preferences.
+- **Deepfake Detection:** Upload a video to analyze whether it has been deepfaked. The website uses CNN and RNN models to examine inconsistencies in each frame and deliver a detailed report.
+- **Model Training:** Train the CNN and RNN models with new datasets to improve detection accuracy and make the system more robust.
