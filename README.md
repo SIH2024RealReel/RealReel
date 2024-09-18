@@ -63,3 +63,15 @@ Once the website is running:
 - **Dark/Light Mode Support:** Switch between light and dark themes to suit your viewing preferences.
 - **Deepfake Detection:** Upload a video to analyze whether it has been deepfaked. The website uses CNN and RNN models to examine inconsistencies in each frame and deliver a detailed report.
 - **Model Training:** Train the CNN and RNN models with new datasets to improve detection accuracy and make the system more robust.
+
+
+### Future Improvements
+- **User Authentication:** Implement a login/signup system to offer personalized features and save user data.
+- **Deepfake Generation:** Add the ability for users to generate their own deepfakes with uploaded content, leveraging the same AI models.
+-**Improved Model Accuracy:** Continuously enhance the CNN and RNN models to improve the accuracy of deepfake detection, especially for more subtle manipulations.
+-**Social Sharing:** Enable users to share the results of deepfake detection or AI-generated media directly on social media platforms.
+-**Cloud Integration:** Offload the heavy lifting of AI model inference and training to cloud platforms to increase performance and scalability.
+
+
+### License
+This project is licensed under the MIT License. For more information, refer to the [LICENSE](#license) file included in the repository.
