@@ -1,29 +1,27 @@
 .aboutus {
-  background-color: black;
-  color: var(--color);
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  height: 100%;
-  width: 100%;
+  background: #18181b;
+  padding: 130px 130px;
 }
-
-.about-us-container {
-  width: 90%;
-  margin: 50px auto;
+.innerAboutus {
   display: flex;
   flex-wrap: wrap;
+  margin: 7px;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  padding: 30px;
-  background: var(--primary-color);
+  padding: 10px 90px;
+  background: #18181b;
   border-radius: 20px;
-  box-shadow: var(--shadow);
+  color: white;
 }
 
-.about-us-container h1 {
+.innerAboutus:hover {
+  scale: 1.05;
+  transition: scale 0.5s;
+  transition: scale ease-out 0.5s;
+}
+
+.innerAboutus h1 {
   width: 100%;
   text-align: center;
   font-size: 3rem;
@@ -34,7 +32,7 @@
   letter-spacing: 4px;
 }
 
-.about-us-container h1::before {
+.innerAboutus h1::before {
   content: "";
   width: 80px;
   height: 5px;
@@ -78,18 +76,18 @@
   color: var(--color);
 }
 
-.about-us-container ul {
+.innerAboutus ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.about-us-container ul li {
+.innerAboutus ul li {
   margin-bottom: 15px;
   position: relative;
   padding-left: 25px;
 }
 
-.about-us-container ul li::before {
+.innerAboutus ul li::before {
   content: "✔️";
   position: absolute;
   left: 0;
@@ -109,7 +107,7 @@ blockquote {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .about-us-container {
+  .innerAboutus {
     flex-direction: column;
     align-items: center;
   }
