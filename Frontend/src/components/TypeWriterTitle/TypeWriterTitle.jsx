@@ -47,7 +47,7 @@ const TypeWriterTitle = ({ words, className, cursorClassName }) => {
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    `dark:text-white text-black opacity-0 hidden text-9xl`,
+                    `dark:text-white text-black opacity-0 hidden text-8xl`,
                     word.className
                   )}
                 >
