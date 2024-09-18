@@ -7,15 +7,15 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #1a1a1a; /* Footer background */
+  background-color: #1a1a1a;
   background: linear-gradient(360deg, #0f3460 0%, #000000 100%);
-  color: #ffffff; /* Text color */
+  color: #ffffff; 
   padding: 20px;
-  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow at the top */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
 }
 
 body {
-  background-color: #000000; /* Body background */
+  background-color: #000000; 
 }
 
 .socialIcons {
