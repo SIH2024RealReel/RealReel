@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer">
       <h2 id="footer-title">RealReel</h2>
       <h3>See through the fake, with AI keeping you awake</h3>
-      <div className="footer_icons flex">
+      <div className="footer_icons_flex">
         <TiSocialFacebook className="socialIcons" />
         <TiSocialInstagram className="socialIcons" />
         <TiSocialTwitter className="socialIcons" />
