@@ -170,6 +170,6 @@ export const TypewriterEffectSmooth = ({
       ></motion.span>
     </div>
   );
-};
+}
 
 export default TypeWriterTitle;
